@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* This way footer stays at the bottom */
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 0 33px;
+    background-color: #FFFFF0;
+}
+
+.nav-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #13315C;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link:first-of-type {
+    margin-right: 23px;
+}
+
+.nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #13315C;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#hamburger {
+    display: none;
+}
+
+#nav-logo-mobile {
+    display: none;
+}
+
+@media (max-width: 670px) {
+    nav {
+        padding: 0 13px;
+        height: 57px ;
+    }
+
+    #nav-logo {
+        height: 35px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #nav-logo-mobile.active {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #FFFFF0;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .nav-link:first-of-type {
+        margin: 34px 0px;
+    }
+
+    /* Hamburger Menu */
+    #hamburger {
+        display: block;
+        cursor: pointer;
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 22px;
+        height: 2px;
+        background-color: #13315C;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+      
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+      
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-4px, -2px);
+        transform: rotate(45deg) translate(-4px, -2px);
+    }
+}
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */

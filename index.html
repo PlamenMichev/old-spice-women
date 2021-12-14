@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Spice</title>
+
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Montserrat:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img id="nav-logo" src="./images/logo.png" alt="Old Spice Logo">
+        <section class="nav-links">
+            <img id="nav-logo-mobile" src="./images/logo-ship.png" alt="Old Spice Logo with ship">
+            <a class="nav-link" href="#">Our Products</a>
+            <a class="nav-link" href="#">Our Stores</a>
+        </section>
+
+        <!-- Mobile hamburger -->
+        <div id="hamburger" onclick="toggleHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+</body>
+<script src="./common.js"></script>
+</html>
