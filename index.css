@@ -6,6 +6,11 @@ header {
     margin-bottom: 72px;
 }
 
+header > .headers {
+    height: fit-content;
+    margin: auto 0;
+}
+
 .woman-image {
     height: 433px;
 }

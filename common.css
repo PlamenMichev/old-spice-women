@@ -62,6 +62,7 @@ p {
     text-decoration: none;
     align-items: center;
     display: flex;
+    width: fit-content;
 }
 
 .button-with-arrow > img {
@@ -231,6 +232,9 @@ footer {
 }
 
 .card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 345px;
     margin-top: 19px;
     margin-bottom: 18px;
@@ -249,6 +253,58 @@ footer {
     align-items: center;
     padding-right: 16px;
     justify-content: space-between;
+}
+
+.top-picks > h1 {
+    margin-bottom: 17px;
+}
+
+/* INFO CARDS STYLING */
+
+.info-cards {
+    margin-top: 60px;
+    margin: 60px 20px 140px 20px;
+}
+
+.info-cards > article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info > a {
+    width: 277px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-top: 51px;
+}
+
+.info > h1 {
+    margin-bottom: 29px;
+}
+
+.info {
+    margin-left: 29px;
+}
+
+.desktop-image {
+    height: 437px;
+    border-radius: 15px;
+    border: 3px solid #F5E2DF;
+}
+
+.info-cards > article:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.info-cards > article:nth-of-type(2) > .info {
+    margin-left: 0;
+    margin-right: 29px;
+}
+
+.mobile-image {
+    display: none;
 }
 
 @media (max-width: 1300px) {
@@ -393,7 +449,42 @@ footer {
     .top-picks {
         margin: 0 10px;
     }
-}
 
-/* font-family: 'Josefin Sans', sans-serif;
-font-family: 'Montserrat', sans-serif; */
+    
+    /* INFO CARDS STYLING */
+
+    .info-cards {
+        margin: 0;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        height: 287px;
+        border-radius: 15px;
+        border: 3px solid #F5E2DF;
+        margin: 5px auto 10px auto;
+        
+    }
+
+    .info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-cards > article:nth-of-type(2) > .info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info > a {
+        margin: 36px auto 86px auto;
+    }
+
+    .info > p {
+        width: 293px;
+    }
+}
