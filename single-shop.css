@@ -1,0 +1,105 @@
+.input {
+    width: 48%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid #13315C;
+    color: #13315C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    margin-top: 160px;
+    margin-bottom: 21px;
+    padding: 6px;
+}
+
+.input > img {
+    margin-right: 15px;
+}
+
+header {
+    background-image: url("/images/normal-blur.png");
+    height: 356px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header > img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -80px;
+}
+
+.map {
+    position: relative;
+    margin: 0 20px;
+}
+
+.map > a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 26px;
+}
+
+.map > img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: underline;
+    color: #AF000F;
+}
+
+
+@media (max-width: 980px) {
+    .input {
+        font-family: 'Josefin Sans', sans-serif;
+        width: 90%;
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 100px;
+    }
+    
+    .input > img {
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    header > img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -45px;
+        width: 75%;
+    }
+    
+    .map > a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+        height: 20px;
+        font-size: 8px;
+        padding: 0 5px;
+    }    
+
+    .map > a > img {
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+    
+}
