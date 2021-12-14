@@ -8,6 +8,7 @@ body {
     position: relative;
     height: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 nav {
@@ -56,9 +57,105 @@ nav {
 
 #nav-logo-mobile {
     display: none;
+    height: 57px;
 }
 
-@media (max-width: 670px) {
+footer {
+    display: flex;
+    height: 362px;
+    background-color: #FFFFF0;
+    padding: 0 50px;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    margin-bottom: 56px;
+}
+
+.social-media > a {
+    margin-right: 11px;
+}
+
+.social-media > a:last-of-type {
+    margin-right: 0;
+}
+
+.mobile-and-mail > section {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-and-mail > section:first-of-type {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 16px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.links > a {
+    display: block;
+}
+
+.info-part {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.info-part > * {
+    width: calc(100%/3);
+}
+
+.logo {
+    text-align: center;
+}
+
+.footer-info {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #13315C;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.copyright-section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #13315C;    
+    text-align: center;
+    margin: auto;
+}
+
+.horizontal-line {
+    width: 100%;
+    background-color: #F5E2DF;
+    height: 2px;
+}
+
+@media (max-width: 880px) {
     nav {
         padding: 0 13px;
         height: 57px ;
@@ -73,6 +170,7 @@ nav {
     }
 
     #nav-logo-mobile.active {
+        margin-top: 20px;
         display: block;
     }
 
@@ -116,6 +214,41 @@ nav {
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-4px, -2px);
         transform: rotate(45deg) translate(-4px, -2px);
+    }
+
+    footer {
+        height: auto;
+        padding: 0;
+    }
+
+    .info-part {
+        flex-direction: column;
+    }
+
+    .info-part > * {
+        width: 100%;
+    }
+
+    .contact {
+        align-items: center;
+    }
+
+    .links {
+        align-items: center;
+    }
+
+    .links > a {
+        margin-bottom: 15px;
+    }
+
+    .copyright-section {
+        margin: 28px auto;
+        font-size: 18px;
+    }
+
+    .logo {
+        margin: 20px;
+        height: 135px;
     }
 }
 
