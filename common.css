@@ -63,10 +63,13 @@ p {
     align-items: center;
     display: flex;
     width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-with-arrow > img {
     margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* NAVIGATION STYLES */
@@ -172,7 +175,7 @@ footer {
 }
 
 .links > a {
-    display: block;
+    display: flex;
 }
 
 .info-part {
@@ -221,6 +224,7 @@ footer {
 .product-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-card {
@@ -229,6 +233,7 @@ footer {
     border-radius: 15px;
     background-color: #FFF1F0;
     padding-left: 16px;
+    margin-bottom: 65px;
 }
 
 .card-image {
@@ -270,13 +275,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .info > a {
     width: 277px;
     text-align: center;
-    display: block;
-    margin-left: auto;
+    display: flex;
+    margin-right: auto;
     margin-top: 51px;
 }
 
@@ -290,6 +296,7 @@ footer {
 
 .desktop-image {
     height: 437px;
+    min-width: 437px;
     border-radius: 15px;
     border: 3px solid #F5E2DF;
 }
@@ -464,6 +471,8 @@ footer {
     .mobile-image {
         display: block;
         height: 287px;
+        min-width: 287px;
+        max-width: 287px;
         border-radius: 15px;
         border: 3px solid #F5E2DF;
         margin: 5px auto 10px auto;
@@ -486,5 +495,11 @@ footer {
 
     .info > p {
         width: 293px;
+        margin: 0 auto;
+    }
+
+    .info > h1 {
+        font-size: 24px;
+        text-align: center;
     }
 }

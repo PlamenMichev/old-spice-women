@@ -7,8 +7,8 @@
     <title>Old Spice</title>
 
     <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./our-shops.css">
-    <link rel="stylesheet" href="./index.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 <body>
     
     <nav>
-        <img id="nav-logo" src="./images/logo.png" alt="Old Spice Logo">
+        <a href="./index.html"><img id="nav-logo" src="./images/logo.png" alt="Old Spice Logo"></a>
         <section class="nav-links">
             <img id="nav-logo-mobile" src="./images/logo-ship.png" alt="Old Spice Logo with ship">
             <a class="nav-link" href="./our-products.html">Our Products</a>
@@ -33,86 +33,51 @@
         </div>
     </nav>
     <header>
-        <section class="images">
-            <img class="woman-image" src="./images/banner-girl.png" alt="girl putting deodorant">
-            <img class="deodorant-image" src="./images/fiji-dry.png" alt="fiji dry deodorant">
-        </section>
-        <section class="headers">
-            <h1>Feel like a Woman</h1>
-            <h2>Our new series will make you smell and feel like a real woman...</h2>
-            <img class="deodorant-image-mobile" src="./images/fiji-dry.png" alt="fiji dry deodorant">
-            <a class="reversed-button" href="./our-products.html">See More <img src="./images/icons/red-arrow.png" alt="red arrow"></a>
-        </section>
+        <div class="desktop-banner">
+            <img src="./images/shops-banner-1.png" alt="shop image">
+            <img src="./images/shops-banner-2.png" alt="shop image">
+            <h1>Find Us Everywhere</h1>
+            <img src="./images/shops-banner-3.png" alt="shop image">
+            <img src="./images/shops-banner-4.png" alt="shop image">
+        </div>
+        <div class="mobile-banner">
+            <img src="./images/shops-banner-2.png" alt="shop image">
+            <h1>Find Us Everywhere</h1>
+            <img src="./images/shops-banner-3.png" alt="shop image">
+        </div>
     </header>
     <main>
-        <section class="top-picks">
-            <h1>TOP PICKS</h1>
-            <section class="product-cards">
-
-            <section class="product-card">
-                <img class="card-image" src="./images/fiji-dry.png" alt="dry fiji deodorant">
-                <h3 class="card-header">Fiji Dry</h3>
-                <p class="card-description">Feel the magic of the summer with mild aromas.</p>
-                <section class="price-and-cta">
-                    <span class="price">18 DKK</span>
-                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
-                </section>
-            </section>
-
-            <section class="product-card">
-                <img class="card-image" src="./images/fiji-spray.png" alt="dry fiji deodorant">
-                <h3 class="card-header">Fiji Spray</h3>
-                <p class="card-description">Incredible smell without damaging your body or the environment.</p>
-                <section class="price-and-cta">
-                    <span class="price">18 DKK</span>
-                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
-                </section>
-            </section>
-
-
-            <section class="product-card">
-                <img class="card-image" src="./images/night-panter.png" alt="dry fiji deodorant">
-                <h3 class="card-header">Night Panter</h3>
-                <p class="card-description">Perfect for a night out. Be one elegant and high class lady.</p>
-                <section class="price-and-cta">
-                    <span class="price">20 DKK</span>
-                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
-                </section>
-            </section>
-        </section>
-        </section>
-
         <section class="info-cards">
             <article>
-                <img class="desktop-image" src="./images/roll-on-white-bg.jpg" alt="roll on deodorant">
+                <img class="desktop-image" src="./images/normal-outside.png" alt="roll on deodorant">
                 <section class="info">
-                    <h1>Our Roll-Ons</h1>
-                    <img class="mobile-image" src="./images/roll-on-white-bg.jpg" alt="roll on deodorant">
-                    <p>Our new roll-on for women series is designed to keep your scent for the whole day without damaging your skin to having any unpleasant aromas. The tiny design with mild colors is really elegant, and it fits all types of women - from the most elegant ladies to the sweaty runners, and why not be both?</p>
+                    <h1>Normal</h1>
+                    <img class="mobile-image" src="./images/normal-outside.png" alt="roll on deodorant">
+                    <p>At NORMAL, we sell completely normal goods at fixed low prices. The assortment includes well-known brands within categories such as skin care, hair care, oral care, shampoo, makeup, and cleaning. In short: All the things that you cannot do without in your everyday life and which should not be missing on the shelves in your home.</p>
 
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
+                    <a href="./single-shop.html" class="button-with-arrow"><img src="./images/icons/location-white.png">Find the closest</a>
                 </section>
             </article>
 
             <article>
-                <img class="desktop-image" src="./images/dry-home-screen-v2.jpg" alt="roll on deodorant">
+                <img class="desktop-image" src="./images/bilka-outside.jpg" alt="roll on deodorant">
                 <section class="info">
-                    <h1>Our Dry Deodorants</h1>
-                    <img class="mobile-image" src="./images/dry-home-screen-v2.jpg" alt="roll on deodorant">
-                    <p>Most of our products are dry as this is the environmental friendly option. The new series with a completely innovative design is going to bring the summer in your house, doesn’t matter of the season. The scent is amazing, and the design is made for both travelers and home women!</p>
+                    <h1>Bilka</h1>
+                    <img class="mobile-image" src="./images/bilka-outside.jpg" alt="roll on deodorant">
+                    <p>Bilka is based on a simple philosophy: Quality at a low price, good customer service and skilled employees. And this has been the case since 1906, the year in which Ferdinand Salling laid the foundations for what is today Salling Group A / S.</p>
 
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
+                    <a href="./single-shop.html" class="button-with-arrow"><img src="./images/icons/location-white.png">Find the closest</a>
                 </section>
             </article>
 
             <article>
-                <img class="desktop-image" src="./images/spray-home-screen.jpg" alt="roll on deodorant">
+                <img class="desktop-image" src="./images/magasin-outside.jpg" alt="roll on deodorant">
                 <section class="info">
-                    <h1>Our Spray Deodorants</h1>
-                    <img class="mobile-image" src="./images/spray-home-screen.jpg" alt="roll on deodorant">
-                    <p>Aah... the good old spray! With the new formula, our spray deodorants don’t contain any aluminum are *get ready!!!* are FREON FREE! You are no longer damaging the environment by using it, and you can jump back to the old way without any problems to the mother nature!</p>
+                    <h1>Magasin</h1>
+                    <img class="mobile-image" src="./images/magasin-outside.jpg" alt="roll on deodorant">
+                    <p>With a giant beauty universe to frolic in, it's not always easy to know what to go for. Fortunately, there is help to be found in Magasin, where our skilled Beauty Shoppers are ready with expert guidance and lots of inspiration for cosmetics, body care and fragrances.</p>
 
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
+                    <a href="./single-shop.html" class="button-with-arrow"><img src="./images/icons/location-white.png">Find the closest</a>
                 </section>
             </article>
         </section>
@@ -150,4 +115,5 @@
         <span class="copyright-section">Copyright © Plamen Michev 2021</span>
     </footer>
 </body>
+<script src="./common.js"></script>
 </html>

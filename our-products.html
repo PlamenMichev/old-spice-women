@@ -7,8 +7,8 @@
     <title>Old Spice</title>
 
     <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./our-products.css">
-    <link rel="stylesheet" href="./index.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <nav>
-        <img id="nav-logo" src="./images/logo.png" alt="Old Spice Logo">
+        <a href="./index.html"><img id="nav-logo" src="./images/logo.png" alt="Old Spice Logo"></a>
         <section class="nav-links">
             <img id="nav-logo-mobile" src="./images/logo-ship.png" alt="Old Spice Logo with ship">
             <a class="nav-link" href="./our-products.html">Our Products</a>
@@ -32,20 +32,31 @@
         </div>
     </nav>
     <header>
-        <section class="images">
-            <img class="woman-image" src="./images/banner-girl.png" alt="girl putting deodorant">
-            <img class="deodorant-image" src="./images/fiji-dry.png" alt="fiji dry deodorant">
-        </section>
-        <section class="headers">
-            <h1>Feel like a Woman</h1>
-            <h2>Our new series will make you smell and feel like a real woman...</h2>
-            <img class="deodorant-image-mobile" src="./images/fiji-dry.png" alt="fiji dry deodorant">
-            <a class="reversed-button" href="./our-products.html">See More <img src="./images/icons/red-arrow.png" alt="red arrow"></a>
-        </section>
+        <div class="desktop-banner">
+            <img src="./images/products-banner-1.png" alt="deodorant image">
+            <img src="./images/products-banner-2.png" alt="deodorant image">
+            <h1>Top Quantity & Low Prices</h1>
+            <img src="./images/products-banner-3.png" alt="deodorant image">
+            <img src="./images/products-banner-4.png" alt="deodorant image">
+        </div>
+        <div class="mobile-banner">
+            <img src="./images/products-banner-2.png" alt="deodorant image">
+            <h1>Top Quantity <br/> & <br/> Low Prices</h1>
+            <img src="./images/products-banner-3.png" alt="deodorant image">
+        </div>
     </header>
     <main>
+        <section class="filter-section">
+            <img src="./images/icons/filter.png" alt="filter">
+            <h3>Type</h3>
+            <select>
+                <option selected>All</optgroup>
+                <option>Spray Deodorants</optgroup>
+                <option>Dry Deodorants</optgroup>
+                <option>Roll-Ons</optgroup>
+            </select>
+        </section>
         <section class="top-picks">
-            <h1>TOP PICKS</h1>
             <section class="product-cards">
 
             <section class="product-card">
@@ -68,7 +79,6 @@
                 </section>
             </section>
 
-
             <section class="product-card">
                 <img class="card-image" src="./images/night-panter.png" alt="dry fiji deodorant">
                 <h3 class="card-header">Night Panter</h3>
@@ -78,42 +88,117 @@
                     <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
                 </section>
             </section>
+            <section class="product-card">
+                <img class="card-image" src="./images/kraken-spray.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Krakengard</h3>
+                <p class="card-description">Deep sea aromas that are perfect for a heavy workout.</p>
+                <section class="price-and-cta">
+                    <span class="price">21 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card">
+                <img class="card-image" src="./images/roll-on-png.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Wolfthorn Roll-On</h3>
+                <p class="card-description">Perfect if you don’t like dry or spray deodorants.</p>
+                <section class="price-and-cta">
+                    <span class="price">25 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card">
+                <img class="card-image" src="./images/canyon.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Canyon Drt</h3>
+                <p class="card-description">Smells like nature, helps the nature... Be one with the nature</p>
+                <section class="price-and-cta">
+                    <span class="price">18 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+            <section class="product-card">
+                <img class="card-image" src="./images/fiji-kit.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Fiji Kit</h3>
+                <p class="card-description">Antiperspirant and body wash for your everyday routine. </p>
+                <section class="price-and-cta">
+                    <span class="price">80 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card">
+                <img class="card-image" src="./images/sweat-defense.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Sweat Defense</h3>
+                <p class="card-description">Amazing effect when used before workout.</p>
+                <section class="price-and-cta">
+                    <span class="price">60 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card">
+                <img class="card-image" src="./images/clean-waters.png" alt="dry fiji deodorant">
+                <h3 class="card-header">Clean Waters</h3>
+                <p class="card-description">High class aluminum free deodorant that will make you feel amazing!</p>
+                <section class="price-and-cta">
+                    <span class="price">80 DKK</span>
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
         </section>
+
+        
+        <section class="product-cards-mobile">
+            <section class="product-card-mobile">
+                <img class="card-image" src="./images/fiji-dry.png" alt="dry fiji deodorant">
+                <section class="card-info">
+                    <h3 class="card-header">Fiji Dry</h3>
+                    <span class="price">18 DKK</span>
+                </section>
+                <section class="price-and-cta">
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card-mobile">
+                <img class="card-image" src="./images/fiji-spray.png" alt="dry fiji deodorant">
+                <section class="card-info">
+                    <h3 class="card-header">Fiji Spray</h3>
+                    <span class="price">18 DKK</span>
+                </section>
+                <section class="price-and-cta">
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+
+            <section class="product-card-mobile">
+                <img class="card-image" src="./images/night-panter.png" alt="dry fiji deodorant">
+                <section class="card-info">
+                    <h3 class="card-header">Night Panter</h3>
+                    <span class="price">20 DKK</span>
+                </section>
+                <section class="price-and-cta">
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
+            <section class="product-card-mobile">
+                <img class="card-image" src="./images/kraken-spray.png" alt="dry fiji deodorant">
+                <section class="card-info">
+                    <h3 class="card-header">Krakengard</h3>
+                    <span class="price">21 DKK</span>
+                </section>
+                <section class="price-and-cta">
+                    <a class="button-with-arrow" href="./single-product.html">Read More <img src="./images/icons/arrow.png" alt="arrow"></a>
+                </section>
+            </section>
         </section>
 
-        <section class="info-cards">
-            <article>
-                <img class="desktop-image" src="./images/roll-on-white-bg.jpg" alt="roll on deodorant">
-                <section class="info">
-                    <h1>Our Roll-Ons</h1>
-                    <img class="mobile-image" src="./images/roll-on-white-bg.jpg" alt="roll on deodorant">
-                    <p>Our new roll-on for women series is designed to keep your scent for the whole day without damaging your skin to having any unpleasant aromas. The tiny design with mild colors is really elegant, and it fits all types of women - from the most elegant ladies to the sweaty runners, and why not be both?</p>
-
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
-                </section>
-            </article>
-
-            <article>
-                <img class="desktop-image" src="./images/dry-home-screen-v2.jpg" alt="roll on deodorant">
-                <section class="info">
-                    <h1>Our Dry Deodorants</h1>
-                    <img class="mobile-image" src="./images/dry-home-screen-v2.jpg" alt="roll on deodorant">
-                    <p>Most of our products are dry as this is the environmental friendly option. The new series with a completely innovative design is going to bring the summer in your house, doesn’t matter of the season. The scent is amazing, and the design is made for both travelers and home women!</p>
-
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
-                </section>
-            </article>
-
-            <article>
-                <img class="desktop-image" src="./images/spray-home-screen.jpg" alt="roll on deodorant">
-                <section class="info">
-                    <h1>Our Spray Deodorants</h1>
-                    <img class="mobile-image" src="./images/spray-home-screen.jpg" alt="roll on deodorant">
-                    <p>Aah... the good old spray! With the new formula, our spray deodorants don’t contain any aluminum are *get ready!!!* are FREON FREE! You are no longer damaging the environment by using it, and you can jump back to the old way without any problems to the mother nature!</p>
-
-                    <a href="./our-products.html" class="button-with-arrow">Check them out</a>
-                </section>
-            </article>
+        <section class="pagination">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </section>
         </section>
     </main>
     <footer>
@@ -150,4 +235,5 @@
     </footer>
     
 </body>
+<script src="./common.js"></script>
 </html>
