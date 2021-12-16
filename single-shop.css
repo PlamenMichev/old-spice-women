@@ -28,7 +28,7 @@
 }
 
 header {
-    background-image: url("/images/normal-blur.png");
+    background-image: url("./images/normal-blur.png");
     height: 356px;
     background-position: center;
     background-repeat: no-repeat;
