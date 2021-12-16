@@ -314,6 +314,20 @@ footer {
     display: none;
 }
 
+.eco-text {
+    font-weight: 700;
+    color: #9BBC6B;
+}
+
+.card-image:hover {
+    opacity: .75;
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media (max-width: 1300px) {
     .top-picks {
         margin: 0 20px;
@@ -342,8 +356,11 @@ footer {
     /* NAVIGATION STYLES */
 
     nav {
+        position: sticky;
+        width: 100%;
         padding: 0 13px;
         height: 57px ;
+        box-sizing: border-box;
     }
 
     #nav-logo {

@@ -71,7 +71,19 @@ h1 {
     display: none;
 }
 
+.buttons-mobile {
+    display: none;
+}
+
 @media (max-width: 980px) {
+    .buttons {
+        display: none;
+    }
+
+    .buttons-mobile {
+        display: block;
+    }
+
     .mobile-images {
         display: flex;
         flex-direction: column;
@@ -110,13 +122,13 @@ h1 {
         margin-top: 15px;
     }
 
-    .buttons {
+    .buttons-mobile {
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
     }
 
-    .buttons > * {
+    .buttons-mobile > * {
         margin-bottom: 11px;
         width: 95%;
     }
